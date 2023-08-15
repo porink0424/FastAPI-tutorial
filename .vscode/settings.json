@@ -3,7 +3,6 @@
     // フォーマッター、リンターの詳細設定は pyproject.toml に記述
     // ルーラーの設定
     "editor.rulers": [
-        70,
         80
     ],
     // python path
