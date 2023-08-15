@@ -1,0 +1,35 @@
+{
+    // 参考: https://zenn.dev/nowa0402/articles/85833db7ff2e13
+    // フォーマッター、リンターの詳細設定は pyproject.toml に記述
+    // ルーラーの設定
+    "editor.rulers": [
+        70,
+        80
+    ],
+    // python path
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    // black
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "none",
+    "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
+    // flake8
+    "python.linting.lintOnSave": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    // pyproject-flake8 pflake8を指定
+    "python.linting.flake8Path": "${workspaceFolder}/.venv/bin/pflake8",
+    // mypy
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyPath": "${workspaceFolder}/.venv/bin/mypy",
+    // isort 拡張機能:ms-python.isort必須
+    "isort.path": [
+        "${workspaceFolder}/.venv/bin/isort"
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    }
+}
