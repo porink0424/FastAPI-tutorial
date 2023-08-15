@@ -2,7 +2,9 @@
 name = "fastapi-tutorial"
 version = "0.1.0"
 description = "Add your description here"
-dependencies = []
+dependencies = [
+    "fastapi[all]>=0.101.1",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
